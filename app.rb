@@ -2,11 +2,17 @@ require 'bundler'
 Bundler.require
 
 $:.unshift File.expand_path("./../lib", __FILE__)
-#require '' #plus besoin de préciser le path exact
+require 'game' #plus besoin de préciser le path exact
+require 'players'
+require 'boardcase'
+require 'board'
 
-def print_grid
-  3.times { print "+----"*3, "+\n", "|    "*3, "|\n" }
-  print "+----"*3, "+\n"
-end
 
-print_grid
+
+
+
+def perform 
+jeu = Game.new
+end 
+
+perform 
